@@ -9,4 +9,5 @@ while i <= 1000:
 print(result)
 
 
-
+import webbrowser
+webbrowser.open('http://google.com')

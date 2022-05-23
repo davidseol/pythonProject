@@ -9,9 +9,10 @@ dst = sys.argv[2]
 
 f = open(src)
 tab_content = f.read()
+space_content = tab_content.replace('\t', ' '*4)
 f.close()
 
-space_content = tab_content.replace('\t', ' '*4)
+
 
 f = open(dst, 'w')
 f.write(space_content)
